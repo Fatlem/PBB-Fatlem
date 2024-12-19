@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_margin="8dp">
+
+        <!-- Nama Resto -->
+        <TextView
+            android:id="@+id/tvNamaResto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resto Mass Rusdi Impact"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:paddingBottom="8dp"/>
+
+        <!-- Gambar Profil -->
+        <ImageView
+            android:id="@+id/imgProfil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/placeholder_image"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Icon dan Kontak -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btnEmail"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_email"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Email"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btnMap"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_map"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Map"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btnPhone"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_phone"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Phone"/>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Deskripsi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi:"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Resto Mass Rusdi Impact, Disini Kalian Bisa Menikmati Menu2 Andalan mass Rusdi..."
+            android:paddingBottom="16dp"/>
+
+        <!-- List Menu -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Menu:"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng || Rp.25000"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitam Mengalir || Rp.25000"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black Burger || Rp.20000"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teh Rudi Gerr || Rp.15000"
+            android:paddingBottom="2dp"/>
+
+        <!-- RecyclerView untuk menampilkan list menu -->
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Alamat -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat:"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jl. Mass Rusdi, Blok E2, No. 17"
+            android:paddingBottom="16dp"/>
+
+        <!-- Jam Buka -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam Buka:"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <!-- Daftar Jam Buka untuk Setiap Hari -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senin - Jumat : 09:00 - 21:00"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sabtu - Minggu : 10:00 - 22:00"
+            android:paddingBottom="2dp"/>
+
+    </LinearLayout>
+</ScrollView>
